@@ -17,7 +17,7 @@ import (
 	"os"
 
 	"github.com/gogo/protobuf/jsonpb"
-	"github.com/heptio/contour/internal/envoy"
+	"github.com/shareed2k/contour/pkg/envoy"
 )
 
 // writeBootstrapConfig writes a bootstrap configuration to the supplied path.

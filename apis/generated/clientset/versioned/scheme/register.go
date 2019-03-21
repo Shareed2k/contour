@@ -19,7 +19,7 @@ limitations under the License.
 package scheme
 
 import (
-	contourv1beta1 "github.com/heptio/contour/apis/contour/v1beta1"
+	contourv1beta1 "github.com/shareed2k/contour/apis/contour/v1beta1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

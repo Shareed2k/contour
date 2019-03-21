@@ -2,7 +2,7 @@ PROJECT = contour
 REGISTRY ?= gcr.io/heptio-images
 IMAGE := $(REGISTRY)/$(PROJECT)
 SRCDIRS := ./cmd ./internal ./apis
-PKGS := $(shell go list ./cmd/... ./internal/...)
+PKGS := $(shell go list ./cmd/... ./pkg/...)
 LOCAL_BOOTSTRAP_CONFIG = config.yaml
 TAG_LATEST ?= false
 
@@ -67,7 +67,7 @@ misspell:
 		-i clas \
 		-locale US \
 		-error \
-		cmd/* internal/* docs/* design/* *.md
+		cmd/* pkg/* docs/* design/* *.md
 
 unconvert:
 	@go get github.com/mdempsky/unconvert

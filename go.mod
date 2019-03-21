@@ -1,4 +1,4 @@
-module github.com/heptio/contour
+module github.com/shareed2k/contour
 
 go 1.12
 
